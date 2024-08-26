@@ -135,7 +135,7 @@ exports.createOTP = async (req, res) => {
     const mailOptions = {
       to: email,
       from: config.development.email_user,
-      subject: "LMS Password Reset OTP",
+      subject: "Cdazzdev Learning Platform Password Reset OTP",
       html: `<p>Your OTP for password reset is: <strong>${otpForUser.otp}</strong></p>
              <p>This will be expired in 1 hour.</p>`,
     };
